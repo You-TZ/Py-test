@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2022-04-07 08:56:42
-LastEditTime: 2022-04-07 09:16:30
+LastEditTime: 2022-04-07 10:05:40
 LastEditors: Please set LastEditors
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \Py-test\Entry\E_python.py
@@ -52,3 +52,39 @@ print('Hello,' + full_name.title()+ ' !')
 message = 'Hello,' + full_name.title() + ' !'
 
 print(message)
+
+# 制表符和换行符
+
+print('\tPython')  #\t制表符
+
+print('Language:\nPython\nC\nJavaScript') # \n换行符
+
+print('Language: \n\tPython\n\tC\n\tJavaScript')
+
+#删除空白
+
+favorite_language = 'python '
+
+favorite_language
+
+favorite_language.rstrip()  #暂时删除
+
+favorite_language  
+
+# 若要永久删除，必须将删除操作的结果存回到变量中：
+
+favorite_language = 'python '
+
+favorite_language = favorite_language.rstrip()
+
+favorite_language
+
+#剔除字符串的开头空白或同时剔除字符串俩端的空白
+
+favorite_language = '  python  '
+
+favorite_language.rstrip()  #删除末尾空白
+
+favorite_language.lstrip()  #删除开头空白
+
+favorite_language.strip()  #删除俩端空白
