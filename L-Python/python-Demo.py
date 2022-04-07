@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2022-03-14 09:12:18
-LastEditTime: 2022-03-22 09:32:12
+LastEditTime: 2022-03-31 10:05:45
 LastEditors: Please set LastEditors
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \sss\python-Demo.py
@@ -14,6 +14,7 @@ FilePath: \sss\python-Demo.py
 #语法：class bool([x])
 
 #参数：x -- 要进行转换的参数。
+from audioop import reverse
 import re
 
 
@@ -449,7 +450,7 @@ len(l)
 # 指定可迭代对象中的一个元素来进行排序。
 # reverse -- 排序规则,reverse=True降序 ,reverse = False升序(默认)。
 a = [5,6,14,7,345,234,12]
-b = sorted(a)
+b = sorted(a,reverse=True)
 a
 b
 
@@ -692,7 +693,7 @@ for i in range(5):
 #next() 
 # 描述：next() 返回迭代器的下一个项目。next() 函数要和生成迭代器的iter() 函数一起使用。
 # 语法：next(iterator[, default])
-# 参数：iterator -- 可迭代对象
+# 参数：iterator -- 迭代器
 # default -- 可选，用于设置在没有下一个元素时返回该默认值，如果不设置，
 # 又没有下一个元素则会触发StopIteration异常。
 # 不加默认值的情况，最后会报错StopIteration
